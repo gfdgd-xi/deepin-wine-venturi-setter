@@ -28,7 +28,7 @@ void Widget::on_pushButton_clicked()
     wait->setVisible(true);
     wait->start();
     QProcess *install=new QProcess;
-    install->start("pkexec",{"deepin-wine-openfiledialog-setting", "deepin"});
+    install->start("pkexec",{"deepin-wine-venturi-setter", "deepin"});
     ui->pushButton->setEnabled(true);
     ui->pushButton_2->setEnabled(true);
     ui->pushButton_3->setEnabled(true);
@@ -45,7 +45,7 @@ void Widget::on_pushButton_2_clicked()
     wait->setVisible(true);
     wait->start();
     QProcess *install=new QProcess;
-    install->start("pkexec",{"deepin-wine-openfiledialog-setting", "defult"});
+    install->start("pkexec",{"deepin-wine-venturi-setter", "defult"});
     ui->pushButton->setEnabled(true);
     ui->pushButton_2->setEnabled(true);
     ui->pushButton_3->setEnabled(true);
@@ -61,7 +61,7 @@ void Widget::on_pushButton_3_clicked()
     wait->setVisible(true);
     wait->start();
     QProcess *install=new QProcess;
-    install->start("pkexec",{"deepin-wine-openfiledialog-setting", "recovery"});
+    install->start("pkexec",{"deepin-wine-venturi-setter", "recovery"});
     ui->pushButton->setEnabled(true);
     ui->pushButton_2->setEnabled(true);
     ui->pushButton_3->setEnabled(true);
